@@ -1,0 +1,221 @@
+/* color */
+:root {
+    --main-bg-color : #0E121A;
+    --text-color : #f1f1f1;
+    --activate-sidebar : #2C72F6
+}
+
+html, body {
+    font-size:15px;
+    font-family: Verdana,sans-serif;
+}
+
+/* background */
+body {
+    background-color : var(--main-bg-color);
+    color : white;
+}
+
+
+/* The navigation bar */
+.top-bar {
+    display: flex;
+    overflow: visible;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 4em;
+    z-index: 100;
+    padding : 0 0 0 0;
+}
+
+.top-bar, .top-bar ul {
+    background-color: var(--main-bg-color);
+}
+
+.top-bar > .fixed-section {
+    flex: 0 0 15em; /* 왼쪽 200px를 고정시킴 */
+    padding : 16px;
+    text-align: center;
+}
+
+.top-bar > .fixed-content {
+    /* 고정 내용에 대한 스타일 */
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.top-bar > .flex-section {
+    flex: 1; /* 나머지 부분을 유동적으로 설정 */
+    display: flex;
+    align-items: center;
+}
+
+.top-bar > .flex-section .top-bar-left {
+    flex : 3;
+}
+
+.top-bar > .flex-section .top-bar-right {
+    flex : 2;
+}
+
+.top-bar > .flex-section .top-bar-right > ul {
+    justify-content: flex-end;
+    margin-right : 100px;
+}
+
+
+.top-bar input {
+    max-width: none;
+}
+
+.title-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3em;
+}
+
+
+/* The side navigation menu */
+.sidebar {
+    width: 15em;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display : flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color : var(--text-color);
+    padding: 16px;
+    width : 12.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: var(--activate-sidebar);
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 15em;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.content {
+    text-align: center;
+}
+
+section {
+    margin-top : 4em;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end
+}
+
+
+/* Button */
+.menu button {
+    background-color : var(--activate-sidebar) !important;
+}
+
+.top-bar-left .search-btn {
+    z-index: 10;
+}
+
+button {
+    white-space: nowrap;
+}
+
+.search-btn {
+    word-wrap: normal
+}
+
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/* On screens that are less than 640px wide, make the sidebar into a topbar */
+@media screen and (max-width: 640px) {
+
+    div.content {
+        margin-left: 0;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    section {
+        margin-top : 3em;
+    }
+
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar a {
+        width: 95%;
+        border-bottom : 1px solid white;
+    }
+}
+
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .top-bar-left .search-bar {
+        position: absolute;
+        width: 400px;
+        align-items: center;
+    }
+
+    /*.search-bar {
+        width: 300px;
+    }*/
+}
+
+@media screen and (max-width: 900px) {
+    .search-bar {
+        width: 80%;
+    }
+
+    .search-btn {
+        width: 20%;
+    }
+
+}

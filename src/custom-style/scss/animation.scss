@@ -1,0 +1,18 @@
+// Motion UI
+@import '/node_modules/motion-ui/src/motion-ui';
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.fade-in {
+  // A long, long fade
+  @include mui-fade(in, $duration: 300ms);
+}
+
+.fade-out {
+  // A long, long fade
+  @include mui-fade(out, $duration: 300ms);
+}
+
+
+
