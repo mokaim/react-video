@@ -11,7 +11,7 @@ import 'video.js/dist/video-js.css';
 //import '@videojs/themes/dist/forest/index.css';
 
 // Sea
-import '@videojs/themes/dist/sea/index.css';
+//import '@videojs/themes/dist/sea/index.css';
 
 export const VideoJS = (props) => {
     const videoRef = React.useRef(null);
@@ -26,7 +26,7 @@ export const VideoJS = (props) => {
             const videoElement = document.createElement("video-js");
 
             //videoElement.classList.add('vjs-big-play-centered');
-            videoElement.classList.add('vjs-theme-sea');  //테마설정
+            //videoElement.classList.add('vjs-theme-sea');  //테마설정
             videoRef.current.appendChild(videoElement);
 
             const player = playerRef.current = videojs(videoElement, options, () => {

@@ -22,7 +22,7 @@ export default function Test() {
         fluid: true,
         poster: 'https://picsum.photos/200',
         sources: [{
-            src: 'http://localhost:8080/hls/index.m3u8',
+            src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
             type: 'application/x-mpegURL'
         }],
 
@@ -40,7 +40,6 @@ export default function Test() {
             videojs.log('player will dispose');
         });
     };
-
 
     return (
         <div>
