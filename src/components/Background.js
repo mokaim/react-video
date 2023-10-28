@@ -4,7 +4,7 @@ import SideNav from './SideNav'
 import Content from './Content'
 import Contents from './Contents'
 
-import MotionUI from "motion-ui";
+//import MotionUI from "motion-ui";
 
 export default function Background() {
     const menuBarRef = useRef(null)
@@ -14,9 +14,9 @@ export default function Background() {
         <div>
             <Header onClick={() => {
                 if (toggle) {
-                    MotionUI.animateIn(menuBarRef.current, 'fade-in');
+                    //MotionUI.animateIn(menuBarRef.current, 'fade-in');
                 } else {
-                    MotionUI.animateOut(menuBarRef.current, 'fade-out');
+                    //MotionUI.animateOut(menuBarRef.current, 'fade-out');
                 }
                 setToggle(!toggle)
             }}></Header>
