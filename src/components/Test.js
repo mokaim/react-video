@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react';
+import {useRef} from 'react';
 import MotionUI from 'motion-ui'
 import videojs from 'video.js';
 import VideoJS from "./VideoJs";
@@ -7,12 +7,6 @@ export default function Test() {
     let ref = useRef(null)
     const playerRef = useRef(null);
     let toggle = false
-
-    useEffect(() => {
-        //const element = ref.current;
-        const element = ref.current;
-        console.log(element.value);
-    }, []);
 
 
     const videoJsOptions = {

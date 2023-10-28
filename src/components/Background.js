@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import Header from './Header'
 import SideNav from './SideNav'
+import Content from './Content'
 import Contents from './Contents'
 
 import MotionUI from "motion-ui";
