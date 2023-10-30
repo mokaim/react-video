@@ -1,6 +1,10 @@
 import React from "react";
 
+
+
 export default function Contents()  {
+
+
     return (
         
         <div className={"content"}>
@@ -23,7 +27,7 @@ export default function Contents()  {
                                     </li>
                                     <li className="orbit-slide">
                                         <figure className="orbit-figure">
-                                            <img className="orbit-image" src={"https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"} alt="Space"/>
+                                            <img className="orbit-image" src={"https://media.cntraveller.com/photos/611bf0b8f6bd8f17556db5e4/master/pass/gettyimages-1146431497.jpg"} alt="Space"/>
                                             <figcaption className="orbit-caption">Lets Rocket!</figcaption>
                                         </figure>
                                     </li>
@@ -55,53 +59,50 @@ export default function Contents()  {
 
                 <div className="row small-up-2 medium-up-3 large-up-4">
                     <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550" alt={""}/>
+                        <img className="thumbnail" src={"/test/1.png"} alt={""}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/2.png"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/3.png"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/dog_1.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/dog_2.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/dog_3.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/music_1.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/music_2.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/panda_1.gif"}/>
+                        <h5>My Site</h5>
+                    </div>
+                    <div className="column">
+                        <img className="thumbnail" src={"/test/panda_2.gif"}/>
                         <h5>My Site</h5>
                     </div>
                     <div className="column">
                         <img className="thumbnail" src="https://placehold.it/550x550"/>
                         <h5>My Site</h5>
                     </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
-                    <div className="column">
-                        <img className="thumbnail" src="https://placehold.it/550x550"/>
-                        <h5>My Site</h5>
-                    </div>
+
                 </div>
 
             </div>
