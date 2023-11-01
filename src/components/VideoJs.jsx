@@ -13,7 +13,7 @@ import 'video.js/dist/video-js.css';
 // Sea
 //import '@videojs/themes/dist/sea/index.css';
 
-export const VideoJS = (props) => {
+export const VideoJs = (props) => {
     const videoRef = React.useRef(null);
     const playerRef = React.useRef(null);
     const {options, onReady} = props;
@@ -63,4 +63,4 @@ export const VideoJS = (props) => {
     );
 }
 
-export default VideoJS;
+export default VideoJs;

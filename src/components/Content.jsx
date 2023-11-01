@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import videojs from "video.js";
-import VideoJS from "./VideoJs";
+import VideoJs from "./VideoJs";
 
 export default function Content()  {
 
@@ -40,7 +40,7 @@ export default function Content()  {
                 <p>The w3-animate-left class slides in an element from left.</p>
             </div>
 
-            <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+            <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
         </div>
     )
 }

@@ -1,7 +1,10 @@
 import {useRef} from 'react';
 import MotionUI from 'motion-ui'
 import videojs from 'video.js';
-import VideoJS from "./VideoJs";
+import VideoJs from "./VideoJs";
+
+
+
 export default function Test() {
 
     let ref = useRef(null)
@@ -100,7 +103,7 @@ export default function Test() {
                     </div>
 
 
-                    <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+                    <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
 
                 </div>
             </section>

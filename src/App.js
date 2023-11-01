@@ -9,20 +9,31 @@ import './custom-style/main'
 
 
 import Background from './components/Background'
+import {redirect} from "react-router-dom";
+
+export async function loader() {
+    console.log('tes : ' + window.location.pathname)
+    if (window.location.pathname === "/") {
+        return redirect(`/home`)
+    }
+}
+
 
 
 const Jquery = require('jquery')
 
 function App() {
 
-    Jquery(document).ready($ => {$(document).foundation()})
+    Jquery(document).ready($ => {
+        $(document).foundation()
+    })
 
-  return (
-    <div className="App">
-      <Background></Background>
-    </div>
+    return (
+        <div className="App">
+            <Background></Background>
+        </div>
 
-  );
+    );
 }
 
 export default App;
