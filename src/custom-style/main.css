@@ -184,6 +184,7 @@ button {
         position: fixed;
         width: 100%;
         height: auto;
+        z-index: 100;
     }
 
     .sidebar a {
