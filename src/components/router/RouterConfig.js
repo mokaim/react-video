@@ -1,5 +1,6 @@
 import * as React from "react";
 import App from '../../App'
+import Content from '../Content'
 import Test from '../Test'
 import * as ReactDOM from "react-dom/client";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: "/:menu",
         element: <App/>,
         loader: SideNavLoader
+    },
+    {
+        path: "/:menu/:id",
+        element: <Test/>,
     },
 ]);
 

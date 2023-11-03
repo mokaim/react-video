@@ -16,6 +16,10 @@ body {
     color : white;
 }
 
+a > h1,h2,h3,h4,h5 {
+    color : white;
+}
+
 
 /* The navigation bar */
 .top-bar {
