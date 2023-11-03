@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import Header from './Header'
 import SideNav from './SideNav'
 import Content from './Content'
@@ -10,14 +10,18 @@ import Contents from './Contents'
 export default function Background() {
     const menuBarRef = useRef(null)
     const [toggle, setToggle] = useState(false)
+    //window.addEventListener('resize', () => { !toggle ? document.getElementById('responsive-menu').style.display = 'flex' : document.getElementById('responsive-menu').style.display = 'none' })
+
+    useEffect(() => {
+        menuBarRef.current.style.display = 'none'
+    },[])
 
     return (
         <div>
             <Header onClick={() => {
+                menuBarRef.current.style.visibility = 'visible'
                 if (toggle) {
-                    //MotionUI.animateIn(menuBarRef.current, 'fade-in');
-                } else {
-                    //MotionUI.animateOut(menuBarRef.current, 'fade-out');
+                    menuBarRef.current.style.display = 'flex'
                 }
                 setToggle(!toggle)
             }}></Header>

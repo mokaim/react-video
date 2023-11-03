@@ -6,12 +6,12 @@
 
 .fade-in {
   // A long, long fade
-  @include mui-fade(in, $duration: 300ms);
+  @include mui-hinge(in, $duration: 100ms);
 }
 
 .fade-out {
   // A long, long fade
-  @include mui-fade(out, $duration: 300ms);
+  @include mui-hinge(out, $duration: 100ms);
 }
 
 

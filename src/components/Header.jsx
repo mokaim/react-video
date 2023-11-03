@@ -4,9 +4,11 @@ export default function Header(props){
         <header>
             <div className="title-bar">
                 <button className="menu-icon"
+                        id={"menu-icon"}
                         type="button"
                         data-toggle="responsive-menu"
                         onClick={() => {
+                            console.log('onClick 실행')
                             props.onClick()
                         }}></button>
                 <div className="title-bar-title">Menu</div>

@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import 'what-input/dist/what-input.min'
+import 'foundation-sites/dist/js/foundation.min'
+import './custom-style/scss/animation.scss'
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 

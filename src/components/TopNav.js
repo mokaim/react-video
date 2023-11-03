@@ -7,10 +7,10 @@ export async function loader({ params }) {
 }
 
 
-export default function SideNav(props) {
+export default function TopNav(props) {
     return (
         <aside>
-            <div className="sidebar" ref={props.forwardedRef} id={"responsive-menu"} data-toggler={""} data-animate="fade-in fade-out">
+            <div className="sidebar" ref={props.forwardedRef} id={"responsive-menu"}>
                 <NavLink to={"/home"} className={({isActive, isPending}) => isActive ? "active" : isPending ? "pending" : ""}>Home</NavLink>
                 <NavLink to={"/news"} className={({isActive, isPending}) => isActive ? "active" : isPending ? "pending" : ""}>News</NavLink>
                 <NavLink to={"/contact"} className={({isActive, isPending}) => isActive ? "active" : isPending ? "pending" : ""}>Contact</NavLink>
