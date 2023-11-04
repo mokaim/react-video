@@ -34,7 +34,7 @@ export default function Header(props){
                     <div className="top-bar-right">
                         <ul className="menu">
                             <li className="search-btn">
-                                <button type="button" className="button">로그인</button>
+                                <button type="button" className="button" data-toggle="login-reveal">로그인</button>
                             </li>
                         </ul>
                     </div>

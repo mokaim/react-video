@@ -1,6 +1,9 @@
 import './App.css';
 
+//import './custom-style/scss/includes.scss'
 
+import 'foundation-sites/dist/css/foundation.min.css'
+import 'foundation-sites/dist/css/foundation-float.min.css'
 import './custom-style/main.css'
 import './custom-style/main'
 

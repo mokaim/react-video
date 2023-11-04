@@ -3,6 +3,7 @@ import Header from './Header'
 import SideNav from './SideNav'
 import Content from './Content'
 import Contents from './Contents'
+import OAuth from "./OAuth";
 
 
 //import MotionUI from "motion-ui";
@@ -29,6 +30,9 @@ export default function Background() {
                 <SideNav forwardedRef={menuBarRef}></SideNav>
                 <Contents></Contents>
             </section>
+
+            <OAuth></OAuth>
+
         </div>
     );
 

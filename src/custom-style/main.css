@@ -1,23 +1,23 @@
 /* color */
 :root {
-    --main-bg-color : #0E121A;
-    --text-color : #f1f1f1;
-    --activate-sidebar : #2C72F6
+    --main-bg-color: #0E121A;
+    --text-color: #f1f1f1;
+    --activate-sidebar: #2C72F6
 }
 
 html, body {
-    font-size:15px;
-    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
 }
 
 /* background */
 body {
-    background-color : var(--main-bg-color);
-    color : white;
+    background-color: var(--main-bg-color);
+    color: white;
 }
 
-a > h1,h2,h3,h4,h5 {
-    color : white;
+a > h1, h2, h3, h4, h5 {
+    color: white;
 }
 
 
@@ -30,7 +30,7 @@ a > h1,h2,h3,h4,h5 {
     width: 100%; /* Full width */
     height: 5em;
     z-index: 100;
-    padding : 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .top-bar, .top-bar ul {
@@ -39,7 +39,7 @@ a > h1,h2,h3,h4,h5 {
 
 .top-bar > .fixed-section {
     flex: 0 0 15em; /* 왼쪽 200px를 고정시킴 */
-    padding : 16px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -56,22 +56,23 @@ a > h1,h2,h3,h4,h5 {
 }
 
 .top-bar > .flex-section .top-bar-left {
-    flex : 3;
+    flex: 3;
 }
 
 .top-bar > .flex-section .top-bar-right {
-    flex : 2;
+    flex: 2;
 }
 
 .top-bar > .flex-section .top-bar-right > ul {
     justify-content: flex-end;
-    margin-right : 100px;
+    margin-right: 100px;
 }
 
 
 .top-bar input {
     max-width: none;
 }
+
 .title-bar {
     position: fixed;
     left: 0;
@@ -96,9 +97,9 @@ a > h1,h2,h3,h4,h5 {
 /* Sidebar links */
 .sidebar a {
     display: block;
-    color : var(--text-color);
+    color: var(--text-color);
     padding: 16px;
-    width : 12.5em;
+    width: 12.5em;
     text-align: center;
     text-decoration: none;
 }
@@ -127,7 +128,7 @@ div.content {
 }
 
 section {
-    margin-top : 5em;
+    margin-top: 5em;
     z-index: 1;
 }
 
@@ -143,7 +144,7 @@ section {
 
 /* Button */
 .menu button {
-    background-color : var(--activate-sidebar) !important;
+    background-color: var(--activate-sidebar) !important;
 }
 
 .top-bar-left .search-btn {
@@ -159,6 +160,19 @@ button {
 }
 
 
+.reveal {
+    width : 400px;
+    height: calc(400px * 3 / 5);
+}
+
+.reveal > #naver_id_login {
+    position: absolute;
+    left: 50%;
+    top:  50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
@@ -180,7 +194,7 @@ button {
     }
 
     section {
-        margin-top : 3em;
+        margin-top: 3em;
     }
 
     .sidebar {
@@ -193,7 +207,7 @@ button {
 
     .sidebar a {
         width: 95%;
-        border-bottom : 1px solid white;
+        border-bottom: 1px solid white;
     }
 
     .title-bar {
@@ -206,7 +220,6 @@ button {
         display: flex !important;
     }
 }
-
 
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
