@@ -16,7 +16,7 @@ export default function Header(props){
 
             <div className="top-bar">
                 <div className="fixed-section">
-                    <h5>TITLE</h5>
+                    <h5>Simple Video Project</h5>
                 </div>
 
                 <div className="flex-section">
