@@ -11,6 +11,7 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 import Contents from "../Contents";
+import Error from "../Error";
 
 
 const router = createBrowserRouter([
@@ -30,10 +31,43 @@ const router = createBrowserRouter([
             {
                 path: "/home/video/:id",
                 element: <Content/>,
-            }
+            },
         ],
         loader: SideNavLoader
     },
+
+    {
+        path: "/news",
+        element: <App/>,
+        children: [
+            {
+                path: "/news",
+                element: <h1>아직 개발되지 않은 페이지 입니다.</h1>,
+            },
+        ],
+
+    },
+    {
+        path: "/contact",
+        element: <App/>,
+        children: [
+            {
+                path: "/contact",
+                element: <h1>아직 개발되지 않은 페이지 입니다.</h1>,
+            },
+        ],
+    },
+    {
+        path: "/about",
+        element: <App/>,
+        children: [
+            {
+                path: "/about",
+                element: <h1>아직 개발되지 않은 페이지 입니다.</h1>,
+            },
+        ],
+    },
+
     {
         path: "/:menu/:id",
         element: <Test/>,
