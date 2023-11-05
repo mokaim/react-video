@@ -4,6 +4,7 @@ import SideNav from './SideNav'
 import Content from './Content'
 import Contents from './Contents'
 import OAuth from "./OAuth";
+import {Outlet} from "react-router-dom";
 
 
 //import MotionUI from "motion-ui";
@@ -28,7 +29,7 @@ export default function Background() {
             }}></Header>
             <section>
                 <SideNav forwardedRef={menuBarRef}></SideNav>
-                <Contents></Contents>
+                <Outlet></Outlet>
             </section>
 
             <OAuth></OAuth>

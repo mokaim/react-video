@@ -36,8 +36,7 @@ export default function Content()  {
     return (
         <div className="content">
             <div className="w3-container w3-center w3-animate-left">
-                <h1>Animation is Fun!</h1>
-                <p>The w3-animate-left class slides in an element from left.</p>
+                <h1>HLS 애니메이션</h1>
             </div>
 
             <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />

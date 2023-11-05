@@ -10,6 +10,7 @@ import {loader as AppLoader} from '../../App'
 import {
     createBrowserRouter,
 } from "react-router-dom";
+import Contents from "../Contents";
 
 
 const router = createBrowserRouter([
@@ -19,8 +20,18 @@ const router = createBrowserRouter([
         loader: AppLoader,
     },
     {
-        path: "/:menu",
+        path: "/home",
         element: <App/>,
+        children: [
+            {
+                path: "/home",
+                element: <Contents/>,
+            },
+            {
+                path: "/home/video/:id",
+                element: <Content/>,
+            }
+        ],
         loader: SideNavLoader
     },
     {
