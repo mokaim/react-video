@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useEffect} from "react";
 import videojs from "video.js";
 import VideoJs from "./VideoJs";
 
@@ -32,14 +32,20 @@ export default function Content()  {
         });
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 
     return (
-        <div className="content">
-            <div className="w3-container w3-center w3-animate-left">
-                <h1>HLS 애니메이션</h1>
-            </div>
+        <div className="content" id={"detail"}>
+            <div className={"row"}>
+                <div className="w3-container w3-center w3-animate-left">
+                    <h1>HLS 애니메이션</h1>
+                </div>
 
-            <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
+                <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
+            </div>
         </div>
     )
 }
