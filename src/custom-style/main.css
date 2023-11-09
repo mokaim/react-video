@@ -168,8 +168,25 @@ button {
 }
 
 .reveal > .close {
-
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
+
+.reveal > .close:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "\00d7"; /* use the hex value here... */
+    color : black;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+}
+
 
 .reveal > #naver_id_login {
     position: absolute;
