@@ -16,6 +16,7 @@ export default function OAuth() {
 
     <div className="reveal" id="login-reveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
         <div id="naver_id_login"></div>
+        <div className={"close"}></div>
     </div>
     )
 }

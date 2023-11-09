@@ -92,7 +92,6 @@ a > h1, h2, h3, h4, h5 {
     flex-flow: column wrap;
     align-items: center;
     display: flex;
-    top: 5em!important;
 }
 
 /* Sidebar links */
@@ -165,7 +164,11 @@ button {
     width : 400px;
     height: calc(400px * 3 / 5);
     border-radius: 40px;
-    background: #efefef;
+    background: #e3e3e3;
+}
+
+.reveal > .close {
+
 }
 
 .reveal > #naver_id_login {
