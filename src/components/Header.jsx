@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 export default function Header(props){
     return (
         <header>
@@ -16,7 +17,8 @@ export default function Header(props){
 
             <div className="top-bar">
                 <div className="fixed-section">
-                    <h5>Simple Video Project</h5>
+                    <Link to={"/home"}><h5>{process.env.REACT_APP_TITLE}</h5></Link>
+
                 </div>
 
                 <div className="flex-section">
