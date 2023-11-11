@@ -92,6 +92,7 @@ a > h1, h2, h3, h4, h5 {
     flex-flow: column wrap;
     align-items: center;
     display: flex;
+    top: 5em!important;
 }
 
 /* Sidebar links */
@@ -226,6 +227,7 @@ button {
         height: auto;
         z-index: 100;
         visibility: hidden;
+        top: 3em!important;
     }
 
     .sidebar a {
