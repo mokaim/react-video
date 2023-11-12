@@ -9,12 +9,18 @@ export default function OAuth() {
         $(login_modal.current).foundation('close')
     }
         useEffect(() => {
-        var naver_id_login = new window.naver_id_login("n1zTuzJ824Xw5MZ0Rad9", "MNDIJexBPq");
+        var naver_id_login = new window.naver_id_login(process.env.REACT_APP_NAVER_CLIENT_ID, process.env.REACT_APP_NAVER_CALLBACK);
         var state = naver_id_login.getUniqState();
+
+
+        //var ww = 'https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=7IbCnCOXeRLfbOpBrIOQ&redirect_uri=http://localhost:3000/about&state=RANDOM_STATE'
+
         naver_id_login.setButton("", 3,50);
-        naver_id_login.setDomain("localhost:3000");
+        naver_id_login.setDomain("http://localhost:3000");
         naver_id_login.setState(state);
         naver_id_login.setPopup();
+
+
         naver_id_login.init_naver_id_login();
 
         const close_btn = document.getElementById("close-btn")

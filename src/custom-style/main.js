@@ -2,7 +2,7 @@ let element = document.getElementById('responsive-menu');
 let isToggled = false;
 
 console.log('test : ' + 'qwdqwdqwdqw')
-
+var naver_login = null
 
 
 /*

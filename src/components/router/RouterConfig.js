@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Contents from "../Contents";
 import Error from "../Error";
+import OAuthRedirect from "../OAuth_Redirect";
 
 
 const router = createBrowserRouter([
@@ -64,6 +65,16 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <h1>아직 개발되지 않은 페이지 입니다.</h1>,
+            },
+        ],
+    },
+    {
+        path: "/oauth/callback",
+        element: <App/>,
+        children: [
+            {
+                path: "/oauth/callback",
+                element: <OAuthRedirect/>,
             },
         ],
     },
