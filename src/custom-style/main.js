@@ -1,10 +1,7 @@
-let element = document.getElementById('responsive-menu');
-let isToggled = false;
-
-console.log('test : ' + 'qwdqwdqwdqw')
-var naver_login = null
-
-
+window.naver_login = null
+window.naverSignInCallback = function () {
+    alert('naver id login : ' + JSON.stringify(window.naver_login))
+}
 /*
 element.addEventListener('transitionstart', () => {
     isToggled = !isToggled;
