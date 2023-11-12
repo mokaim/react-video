@@ -1,8 +1,6 @@
 import React, {useRef, useState, useEffect} from "react";
 import Header from './Header'
 import SideNav from './SideNav'
-import Content from './Content'
-import Contents from './Contents'
 import OAuth from "./OAuth";
 import {Outlet} from "react-router-dom";
 
