@@ -238,6 +238,17 @@ button {
     .title-bar {
         z-index: 150;
     }
+
+    .lock-display {
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        background-color: var(--main-bg-color);
+        z-index: 50;
+        opacity: 70%;
+    }
 }
 
 @media screen and (min-width: 640px) {

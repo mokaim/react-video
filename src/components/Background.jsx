@@ -19,11 +19,20 @@ export default function Background() {
     },[])
 
     return (
-        <div>
+        <div className={"background"}>
+            { toggle ? <div className={"lock-display"} onClick={() => {
+                document.documentElement.style.overflow = 'auto'
+                setToggle(!toggle)
+                menuBarRef.current.style.display = 'none'
+
+            }}></div> : <div></div> }
+
             <Header onClick={() => {
                 menuBarRef.current.style.visibility = 'visible'
+                document.documentElement.style.overflow = 'hidden'; // 스크롤바를 숨김
                 if (toggle) {
                     menuBarRef.current.style.display = 'flex'
+                    document.documentElement.style.overflow = 'auto'; // 스크롤바를 다시 보여줌
                 }
                 setToggle(!toggle)
             }}></Header>
