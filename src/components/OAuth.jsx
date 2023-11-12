@@ -27,9 +27,7 @@ export default function OAuth() {
 
         const close_btn = document.getElementById("close-btn")
         close_btn.addEventListener('click', close_modal)
-        console.log('취소버튼 클릭 이벤트 추가')
         return () => {
-            console.log('취소버튼 클릭 이벤트 제거')
             close_btn.removeEventListener('click', close_modal)
         }
 
