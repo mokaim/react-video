@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import videojs from "video.js";
 import VideoJs from "./VideoJs";
+import Comments from "./Comments";
 
 export default function Content()  {
 
@@ -45,6 +46,7 @@ export default function Content()  {
                 </div>
 
                 <VideoJs options={videoJsOptions} onReady={handlePlayerReady} />
+                <Comments></Comments>
             </div>
         </div>
     )

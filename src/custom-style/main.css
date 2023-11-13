@@ -2,7 +2,9 @@
 :root {
     --main-bg-color: #0E121A;
     --text-color: #f1f1f1;
-    --activate-sidebar: #2C72F6
+    --activate-sidebar: #2C72F6;
+    --comment-bg-color: #edf1ff;
+    --comment-line-color: #c2d8ff;
 }
 
 html, body {
@@ -195,7 +197,92 @@ button {
     top:  50%;
     text-align: center;
     transform: translate(-50%, -50%);
+}
 
+.comments {
+    margin-top: 5em;
+    width:60%
+}
+
+.comments > .comment {
+    display: flex;
+    flex-direction: row;
+    height : 10em;
+    margin-top: 20px;
+    border: 5px solid var(--comment-line-color);
+    background-color: var(--comment-bg-color);
+    border-radius: 20px;
+    color: #0E121A;
+}
+
+.comments > .comment > .img_wrapper {
+    flex: 1;
+}
+
+.comments > .comment > .img_wrapper > img {
+    position: absolute;
+    -ms-transform: translateY(50%);
+    transform: translateX(-50%) translateY(50%);
+    width :70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.comments > .comment > .comment_wrapper {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.comment_wrapper * {
+    color: black;
+}
+
+.comment_wrapper .comment_wrapper_top {
+    display: flex;
+    height : 50px
+}
+
+.comment_wrapper_top > * {
+    height : 50px;
+}
+
+.comment_wrapper_top .nick_name {
+    text-align: left;
+    line-height: 2.5;
+}
+
+.comment_wrapper_top .date {
+    padding-left: 20px;
+    text-align: left;
+    color: #8d8d8d;
+    line-height: 4;
+}
+
+.comment_wrapper > .comment_wrapper_bottom {
+    text-align: left;
+}
+
+
+.comments > .comment > .like_wrapper {
+    flex: 1;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.like_wrapper > img {
+    width : 25px;
+    height : 25px;
+}
+
+.like_wrapper > div {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -286,4 +373,10 @@ button {
         width: 20%;
     }
 
+}
+
+@media screen and (max-width: 1100px) {
+    .comments {
+        width:100%
+    }
 }
