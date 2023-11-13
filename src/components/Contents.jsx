@@ -73,43 +73,43 @@ export default function Contents() {
 
                 <div className="row small-up-2 medium-up-3 large-up-4">
                     <Link to={"/home/video/1"} className={"column"}>
-                        <img className="thumbnail" src={"/test/1.png"} alt={""}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/1.png"} alt={""}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/2"} className={"column"}>
-                        <img className="thumbnail" src={"/test/2.png"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/2.png"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/3"} className={"column"}>
-                        <img className="thumbnail" src={"/test/3.png"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/3.png"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/4"} className={"column"}>
-                        <img className="thumbnail" src={"/test/dog_1.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/dog_1.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/5"} className={"column"}>
-                        <img className="thumbnail" src={"/test/dog_2.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/dog_2.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/6"} className={"column"}>
-                        <img className="thumbnail" src={"/test/dog_3.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/dog_3.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/7"} className={"column"}>
-                        <img className="thumbnail" src={"/test/music_1.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/music_1.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/8"} className={"column"}>
-                        <img className="thumbnail" src={"/test/music_2.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/music_2.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/9"} className={"column"}>
-                        <img className="thumbnail" src={"/test/panda_1.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/panda_1.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/10"} className={"column"}>
-                        <img className="thumbnail" src={"/test/panda_2.gif"}/>
+                        <img className="thumbnail" src={process.env.PUBLIC_URL + "/test/panda_2.gif"}/>
                         <h5>My Site</h5>
                     </Link>
                     <Link to={"/home/video/11"} className={"column"}>

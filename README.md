@@ -8,9 +8,9 @@ Video.js 를 사용하여 Nginx HLS 스트리밍 기능을 구현한 프로젝�
 
 <br>
 
-
-![img](/public/preview.jpg)
 ![img](/public/test/preview_02.png)
+![img](/public/preview.jpg)
+![img](/public/test/preview_03.jpg)
 
 ## 사용한 모듈 및 패키지
 
